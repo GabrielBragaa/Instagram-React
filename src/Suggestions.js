@@ -7,20 +7,20 @@ export default function Sugestoes() {
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
-            <Sugestao imagem-usuario="public/assets/img/bad.vibes.memes.svg" alt-usuario="bad.vibes.memes.svg"
-                nome-usuario="bad.vibes.memes" razao-usuario="Segue você" />
+            <Sugestao imagem_usuario="assets/img/bad.vibes.memes.svg" alt_usuario="bad.vibes.memes.svg"
+                nome_usuario="bad.vibes.memes" razao_usuario="Segue você" />
 
-            <Sugestao imagem-usuario="public/assets/img/chibirdart.svg" alt-usuario="razoesparaacreditar"
-                nome-usuario="chibirdart" razao-usuario="Segue você" />
+            <Sugestao imagem_usuario="assets/img/chibirdart.svg" alt_usuario="razoesparaacreditar"
+                nome_usuario="chibirdart" razao_usuario="Segue você" />
 
-            <Sugestao imagem-usuario="public/assets/img/razoesparaacreditar.svg" alt-usuario="chibirdart"
-                nome-usuario="razoesparaacreditar" razao-usuario="Novo no Instagram" />
+            <Sugestao imagem_usuario="assets/img/razoesparaacreditar.svg" alt_usuario="chibirdart"
+                nome_usuario="razoesparaacreditar" razao_usuario="Novo no Instagram" />
 
-            <Sugestao imagem-usuario="public/assets/img/adorable_animals.svg" alt-usuario="adorable_animals"
-                nome-usuario="adorable_animals" razao-usuario="Segue você" />
+            <Sugestao imagem_usuario="assets/img/adorable_animals.svg" alt_usuario="adorable_animals"
+                nome_usuario="adorable_animals" razao_usuario="Segue você" />
 
-            <Sugestao imagem-usuario="public/assets/img/smallcutecats.svg" alt-usuario="smallcutecats"
-                nome-usuario="smallcutecats" razao-usuario="Segue você" />
+            <Sugestao imagem_usuario="assets/img/smallcutecats.svg" alt_usuario="smallcutecats"
+                nome_usuario="smallcutecats" razao_usuario="Segue você" />
         </div>
 
     )

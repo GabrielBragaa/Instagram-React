@@ -3,8 +3,8 @@ export function Post(props) {
         <div class="post">
             <div class="topo">
               <div class="usuario">
-                <img src={props.imagem-usuario} alt={props.alt-usuario}/>
-                {props.nome-usuario}
+                <img src={props.imagem_usuario} alt={props.alt_usuario}/>
+                {props.nome_usuario}
               </div>
               <div class="acoes">
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -12,7 +12,7 @@ export function Post(props) {
             </div>
 
             <div class="conteudo">
-              <img src={props.imagem-conteudo} alt={props.alt-conteudo}/>
+              <img src={props.imagem_conteudo} alt={props.alt_conteudo}/>
             </div>
 
             <div class="fundo">
@@ -28,9 +28,9 @@ export function Post(props) {
               </div>
 
               <div class="curtidas">
-                <img src={props.imagem-curtidas} alt={props.alt-curtidas}/>
+                <img src={props.imagem_curtidas} alt={props.alt_curtidas}/>
                 <div class="texto">
-                  Curtido por <strong>{props.nome-curtidas}</strong> e <strong>outras {props.numero-curtidas} pessoas</strong>
+                  Curtido por <strong>{props.nome_curtidas}</strong> e <strong>outras {props.numero_curtidas} pessoas</strong>
                 </div>
               </div>
             </div>

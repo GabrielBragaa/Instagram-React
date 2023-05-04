@@ -1,10 +1,14 @@
 
 import Navbar from "./Navbar";
 import ReactDOM from "react-dom";
+import Body from "./Body";
 
 function App() {
     return (
-        <Navbar/>
+        <div>
+            <Navbar />
+            <Body />
+        </div>
     )
 }
 

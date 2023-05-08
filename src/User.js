@@ -10,16 +10,16 @@ export default function User(props) {
             if (img !== undefined && img !== null && img !== '') {
                   setImg(img)
                 };
-          }}/>
+          }} data-test="profile-image"/>
           <div class="texto">
             <span>
-              <strong>{nome}</strong>
+              <strong data-test="name">{nome}</strong>
               <ion-icon name="pencil" onClick={function () {
                 nome = prompt('Qual o nome de usuário?');
                 if (nome !== undefined && nome !== null && nome !== '') {
                   setNome(nome)
                 };
-              }}></ion-icon>
+              }} data-test="edit-name"></ion-icon>
             </span>
           </div>
         </div>

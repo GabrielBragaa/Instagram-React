@@ -7,7 +7,7 @@ export function Post(props) {
   let [classe, setClasse] = useState('preto');
 
   return (
-        <div class="post">
+        <div class="post" data-test="post">
             <div class="topo">
               <div class="usuario">
                 <img src={props.imagem_usuario} alt={props.alt_usuario}/>
@@ -26,7 +26,7 @@ export function Post(props) {
                 curtidas = curtidas + 0.001;
                 setCurtidas(curtidas)
                 }
-              }}/>
+              }} data-test="post-image"/>
             </div>
 
             <div class="fundo">
@@ -48,7 +48,7 @@ export function Post(props) {
                       classe = 'preto';
                       setClasse(classe);
                     }
-                  }} class={classe}></ion-icon>
+                  }} class={classe} data-test="like-post"></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
                   <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
@@ -61,14 +61,14 @@ export function Post(props) {
                       salvo = "bookmark-outline";
                       setSalvo(salvo);
                     }
-                  }}></ion-icon>
+                  }} data-test="save-post"></ion-icon>
                 </div>
               </div>
 
               <div class="curtidas">
                 <img src={props.imagem_curtidas} alt={props.alt_curtidas}/>
                 <div class="texto">
-                  Curtido por <strong>{props.nome_curtidas}</strong> e <strong>outras {curtidas} pessoas</strong>
+                  Curtido por <strong>{props.nome_curtidas}</strong> e <strong data-test="likes-number">outras {curtidas} pessoas</strong>
                 </div>
               </div>
             </div>

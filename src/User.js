@@ -9,7 +9,9 @@ export default function User(props) {
             img = prompt('Digite o link da imagem de perfil')
             if (img !== undefined && img !== null && img !== '') {
                   setImg(img)
-                };
+            } else {
+              prompt('Digite um link válido')
+            };
           }} data-test="profile-image"/>
           <div class="texto">
             <span>

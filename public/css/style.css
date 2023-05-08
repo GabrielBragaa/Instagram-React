@@ -191,6 +191,14 @@ body {
   color: red;
 }
 
+.coracao {
+  position: relative;
+  z-index: 2;
+  top: -350px;
+  left: 290px;
+  color: yellow;
+}
+
 .post .fundo .acoes div:first-child ion-icon {
   margin-right: 6px;
 }

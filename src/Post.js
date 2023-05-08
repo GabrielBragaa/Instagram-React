@@ -22,11 +22,14 @@ export function Post(props) {
               <img src={props.imagem_conteudo} alt={props.alt_conteudo} onDoubleClick={function () {
                 if (like === "heart-outline") {
                   like = 'heart';
-                setLike(like);
-                curtidas = curtidas + 0.001;
-                setCurtidas(curtidas)
+                  setLike(like);
+                  curtidas = curtidas + 0.001;
+                  setCurtidas(curtidas)
+                  classe = 'vermelho';
+                  setClasse(classe);
                 }
               }} data-test="post-image"/>
+              <ion-icon name="heart" class="coracao"></ion-icon>
             </div>
 
             <div class="fundo">

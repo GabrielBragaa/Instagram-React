@@ -29,7 +29,7 @@ export function Post(props) {
                   setClasse(classe);
                 }
               }} data-test="post-image"/>
-              <ion-icon name="heart" class="coracao"></ion-icon>
+              <ion-icon name="heart" class="coracao "></ion-icon>
             </div>
 
             <div class="fundo">

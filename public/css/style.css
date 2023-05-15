@@ -191,12 +191,19 @@ body {
   color: red;
 }
 
+.escondido {
+  display: none
+}
+
 .coracao {
   position: relative;
+  font-size: 150px;
   z-index: 2;
-  top: -350px;
-  left: 290px;
-  color: yellow;
+  top: -400px;
+  left: 225px;
+  color: white;
+  transform: scale(0.2);
+  transition: all 0.3s;
 }
 
 .post .fundo .acoes div:first-child ion-icon {

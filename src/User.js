@@ -10,7 +10,8 @@ export default function User(props) {
             if (img !== undefined && img !== null && img !== '') {
                   setImg(img)
             } else {
-              prompt('Digite um link válido')
+              img = prompt('Digite um link válido')
+              
             };
           }} data-test="profile-image"/>
           <div class="texto">

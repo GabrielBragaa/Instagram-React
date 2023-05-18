@@ -7,10 +7,13 @@ export default function User(props) {
         <div class="usuario">
           <img src={img} alt={props.alt_usuario} onClick={function () {
             img = prompt('Digite o link da imagem de perfil')
-            if (img !== undefined && img !== null && img !== '') {
-                  setImg(img)
-            } else {
+            let teste = img.includes('https:');
+            while (img === undefined || img === null || img === '' || teste === false) {
               img = prompt('Digite um link válido')
+              teste = img.includes('https:');
+            } if(img !== undefined && img !== null && img !== '') {
+              console.log(teste)
+              setImg(img)
               
             };
           }} data-test="profile-image"/>

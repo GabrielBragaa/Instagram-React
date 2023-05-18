@@ -1,17 +1,18 @@
 import { useState } from "react"
 
 export function Post(props) {
+  let {imagem_usuario, alt_usuario, nome_usuario, imagem_conteudo, imagem_curtidas, alt_curtidas, nome_curtidas, n_curtidas} = props; 
   let [salvo, setSalvo] = useState('bookmark-outline');  
   let [like, setLike] = useState('heart-outline');
-  let [curtidas, setCurtidas] = useState(props.numero_curtidas);
+  let [curtidas, setCurtidas] = useState(n_curtidas);
   let [classe, setClasse] = useState('preto');
-
+  
   return (
         <div class="post" data-test="post">
             <div class="topo">
               <div class="usuario">
-                <img src={props.imagem_usuario} alt={props.alt_usuario}/>
-                {props.nome_usuario}
+                <img src={imagem_usuario} alt={alt_usuario}/>
+                {nome_usuario}
               </div>
               <div class="acoes">
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -19,7 +20,7 @@ export function Post(props) {
             </div>
 
             <div class="conteudo">
-              <img src={props.imagem_conteudo} onDoubleClick={function () {
+              <img src={imagem_conteudo} onDoubleClick={function () {
                 if (like === "heart-outline") {
                   like = 'heart';
                   setLike(like);
@@ -68,9 +69,9 @@ export function Post(props) {
               </div>
 
               <div class="curtidas">
-                <img src={props.imagem_curtidas} alt={props.alt_curtidas}/>
+                <img src={imagem_curtidas} alt={alt_curtidas}/>
                 <div class="texto">
-                  Curtido por <strong>{props.nome_curtidas}</strong> e <strong data-test="likes-number">outras {curtidas} pessoas</strong>
+                  Curtido por <strong>{nome_curtidas}</strong> e <strong data-test="likes-number">outras {curtidas} pessoas</strong>
                 </div>
               </div>
             </div>

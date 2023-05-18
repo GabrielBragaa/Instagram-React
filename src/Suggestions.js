@@ -8,14 +8,17 @@ export default function Sugestoes() {
      {imagem: "assets/img/adorable_animals.svg", alt: "adorable_animals", nome: "adorable_animals", razao: "Segue você"},
      {imagem: "assets/img/smallcutecats.svg", alt: "smallcutecats", nome: "smallcutecats", razao: "Segue você"}]
     
+    const [{imagem, alt, nome, razao}] = sugestoes;
+    
+
     return (
         <div class="sugestoes">
             <div class="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
-            {sugestoes.map(sugestao => <Sugestao imagem_usuario={sugestao.imagem} alt_usuario={sugestao.alt}
-                nome_usuario={sugestao.nome} razao_usuario={sugestao.razao} />)}
+            {sugestoes.map((sugestao, i) => <Sugestao key={i} imagem_usuario={imagem} alt_usuario={alt}
+                nome_usuario={nome} razao_usuario={razao} />)}
         </div>
 
     )

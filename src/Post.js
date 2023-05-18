@@ -1,39 +1,40 @@
 import { useState } from "react"
 
+
 export function Post(props) {
   let {imagem_usuario, alt_usuario, nome_usuario, imagem_conteudo, imagem_curtidas, alt_curtidas, nome_curtidas, n_curtidas} = props; 
   let [salvo, setSalvo] = useState('bookmark-outline');  
   let [like, setLike] = useState('heart-outline');
   let [curtidas, setCurtidas] = useState(n_curtidas);
-  let [classe, setClasse] = useState('preto');
+  let [classNamee, setclassNamee] = useState('preto');
   
   return (
-        <div class="post" data-test="post">
-            <div class="topo">
-              <div class="usuario">
+        <div className="post" data-test="post">
+            <div className="topo">
+              <div className="usuario">
                 <img src={imagem_usuario} alt={alt_usuario}/>
                 {nome_usuario}
               </div>
-              <div class="acoes">
+              <div className="acoes">
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
               </div>
             </div>
 
-            <div class="conteudo">
+            <div className="conteudo">
               <img src={imagem_conteudo} onDoubleClick={function () {
                 if (like === "heart-outline") {
                   like = 'heart';
                   setLike(like);
                   curtidas = curtidas + 1;
                   setCurtidas(curtidas)
-                  classe = 'vermelho';
-                  setClasse(classe);
+                  classNamee = 'vermelho';
+                  setclassNamee(classNamee);
                 }
               }} data-test="post-image"/>
             </div>
 
-            <div class="fundo">
-              <div class="acoes">
+            <div className="fundo">
+              <div className="acoes">
                 <div>
                   <ion-icon name={like} onClick={function () {
                     if (like === "heart-outline") {
@@ -41,17 +42,17 @@ export function Post(props) {
                       setLike(like);
                       curtidas = curtidas + 0.001;
                       setCurtidas(curtidas);
-                      classe = 'vermelho';
-                      setClasse(classe);
+                      classNamee = 'vermelho';
+                      setclassNamee(classNamee);
                     } else {
                       like = 'heart-outline';
                       setLike(like);
                       curtidas = curtidas - 0.001;
                       setCurtidas(curtidas);
-                      classe = 'preto';
-                      setClasse(classe);
+                      classNamee = 'preto';
+                      setclassNamee(classNamee);
                     }
-                  }} class={classe} data-test="like-post"></ion-icon>
+                  }} className={classNamee} data-test="like-post"></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
                   <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
@@ -68,9 +69,9 @@ export function Post(props) {
                 </div>
               </div>
 
-              <div class="curtidas">
+              <div className="curtidas">
                 <img src={imagem_curtidas} alt={alt_curtidas}/>
-                <div class="texto">
+                <div className="texto">
                   Curtido por <strong>{nome_curtidas}</strong> e <strong data-test="likes-number">outras {curtidas} pessoas</strong>
                 </div>
               </div>

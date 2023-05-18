@@ -12,9 +12,9 @@ export default function Stories() {
   
   const [{imagem, alt, user}] = imgs;  
   return (
-        <div class="stories">
-          {imgs.map(() => <Story key={alt} imagem_story={imagem} alt_story={alt} usuario_story={user}/>)}
-          <div class="setinha">
+        <div className="stories">
+          {imgs.map((story, i) => <Story key={i} imagem_story={imagem} alt_story={alt} usuario_story={user}/>)}
+          <div className="setinha">
             <ion-icon name="chevron-forward-circle"></ion-icon>
           </div>
         </div>

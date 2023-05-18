@@ -4,7 +4,7 @@ export default function User(props) {
   let [nome, setNome] = useState('Usuário');  
   let [img, setImg] = useState('');
   return (
-        <div class="usuario">
+        <div className="usuario">
           <img src={img} alt={props.alt_usuario} onClick={function () {
             img = prompt('Digite o link da imagem de perfil')
             let teste = img.includes('https:');
@@ -17,7 +17,7 @@ export default function User(props) {
               
             };
           }} data-test="profile-image"/>
-          <div class="texto">
+          <div className="texto">
             <span>
               <strong data-test="name">{nome}</strong>
               <ion-icon name="pencil" onClick={function () {

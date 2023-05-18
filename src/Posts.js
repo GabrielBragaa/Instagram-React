@@ -1,5 +1,6 @@
 import { Post } from "./Post"
 
+
 export default function Posts() {
     const posts = 
     [{img_user: "assets/img/meowed.svg", alt_user: "meowed", nome_user: "gato_telefone", 
@@ -12,8 +13,8 @@ export default function Posts() {
      const [{img_user, alt_user, nome_user, img_post, img_like, alt_like, nome_like, n_like}] = posts;
 
     return (
-        <div class="posts">
-            {posts.map(() => <Post imagem_usuario={img_user} alt_usuario={alt_user} nome_usuario={nome_user}
+        <div className="posts">
+            {posts.map((post, i) => <Post key={i} imagem_usuario={img_user} alt_usuario={alt_user} nome_usuario={nome_user}
                 imagem_conteudo={img_post}
                 imagem_curtidas={img_like} alt_curtidas={alt_like} nome_curtidas={nome_like} numero_curtidas={n_like} />)}
 

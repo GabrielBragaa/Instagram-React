@@ -3,11 +3,11 @@ import { Post } from "./Post"
 export default function Posts() {
     const posts = 
     [{img_user: "assets/img/meowed.svg", alt_user: "meowed", nome_user: "gato_telefone", 
-     img_post: "assets/img/gato-telefone.svg", img_like: "assets/img/respondeai.svg", alt_like: "respondeai", nome_like: "respondeai", n_like: "101.523"},
+     img_post: "assets/img/gato-telefone.svg", img_like: "assets/img/respondeai.svg", alt_like: "respondeai", nome_like: "respondeai", n_like: 101.523},
      {img_user: "assets/img/barked.svg", alt_user: "barked", nome_user: "barked", 
-     img_post: "assets/img/dog.svg", img_like: "assets/img/adorable_animals.svg", alt_like: "adorable_animals", nome_like: "adorable_animals", n_like: "99.154"},
+     img_post: "assets/img/dog.svg", img_like: "assets/img/adorable_animals.svg", alt_like: "adorable_animals", nome_like: "adorable_animals", n_like: 99.154},
      {img_user: "assets/img/meowed.svg", alt_user: "meowed", nome_user: "gato_telefone", 
-     img_post: "assets/img/gato-telefone.svg", img_like: "assets/img/respondeai.svg", alt_like: "respondeai", nome_like: "respondeai", n_like: "101.523"}]
+     img_post: "assets/img/gato-telefone.svg", img_like: "assets/img/respondeai.svg", alt_like: "respondeai", nome_like: "respondeai", n_like: 101.523}]
     
     return (
         <div class="posts">

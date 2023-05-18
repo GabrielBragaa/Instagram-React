@@ -3,7 +3,7 @@ import { useState } from "react"
 export function Post(props) {
   let [salvo, setSalvo] = useState('bookmark-outline');  
   let [like, setLike] = useState('heart-outline');
-  let [curtidas, setCurtidas] = useState(Number(props.numero_curtidas));
+  let [curtidas, setCurtidas] = useState(props.numero_curtidas);
   let [classe, setClasse] = useState('preto');
 
   return (
@@ -23,7 +23,7 @@ export function Post(props) {
                 if (like === "heart-outline") {
                   like = 'heart';
                   setLike(like);
-                  curtidas = curtidas + 0.001;
+                  curtidas = curtidas + 1;
                   setCurtidas(curtidas)
                   classe = 'vermelho';
                   setClasse(classe);

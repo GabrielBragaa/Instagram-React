@@ -1,26 +1,21 @@
 import Sugestao from "./Suggestion"
 
 export default function Sugestoes() {
+    const sugestoes = 
+    [{imagem: "assets/img/bad.vibes.memes.svg", alt: "bad.vibes.memes.svg", nome: "bad.vibes.memes", razao: "Segue você"},
+     {imagem: "assets/img/chibirdart.svg", alt: "razoesparaacreditar", nome: "chibirdart", razao: "Segue você"},
+     {imagem: "assets/img/razoesparaacreditar.svg", alt: "chibirdart", nome: "razoesparaacreditar", razao: "Novo no Instagram"},
+     {imagem: "assets/img/adorable_animals.svg", alt: "adorable_animals", nome: "adorable_animals", razao: "Segue você"},
+     {imagem: "assets/img/smallcutecats.svg", alt: "smallcutecats", nome: "smallcutecats", razao: "Segue você"}]
+    
     return (
         <div class="sugestoes">
             <div class="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
-            <Sugestao imagem_usuario="assets/img/bad.vibes.memes.svg" alt_usuario="bad.vibes.memes.svg"
-                nome_usuario="bad.vibes.memes" razao_usuario="Segue você" />
-
-            <Sugestao imagem_usuario="assets/img/chibirdart.svg" alt_usuario="razoesparaacreditar"
-                nome_usuario="chibirdart" razao_usuario="Segue você" />
-
-            <Sugestao imagem_usuario="assets/img/razoesparaacreditar.svg" alt_usuario="chibirdart"
-                nome_usuario="razoesparaacreditar" razao_usuario="Novo no Instagram" />
-
-            <Sugestao imagem_usuario="assets/img/adorable_animals.svg" alt_usuario="adorable_animals"
-                nome_usuario="adorable_animals" razao_usuario="Segue você" />
-
-            <Sugestao imagem_usuario="assets/img/smallcutecats.svg" alt_usuario="smallcutecats"
-                nome_usuario="smallcutecats" razao_usuario="Segue você" />
+            {sugestoes.map(sugestao => <Sugestao imagem_usuario={sugestao.imagem} alt_usuario={sugestao.alt}
+                nome_usuario={sugestao.nome} razao_usuario={sugestao.razao} />)}
         </div>
 
     )

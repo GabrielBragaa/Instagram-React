@@ -19,7 +19,7 @@ export function Post(props) {
             </div>
 
             <div class="conteudo">
-              <img src={props.imagem_conteudo} alt={props.alt_conteudo} onDoubleClick={function () {
+              <img src={props.imagem_conteudo} onDoubleClick={function () {
                 if (like === "heart-outline") {
                   like = 'heart';
                   setLike(like);
@@ -29,7 +29,6 @@ export function Post(props) {
                   setClasse(classe);
                 }
               }} data-test="post-image"/>
-              <ion-icon name="heart" class="coracao "></ion-icon>
             </div>
 
             <div class="fundo">

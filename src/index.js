@@ -1,16 +1,8 @@
 
-import Navbar from "./Navbar";
+import App from "./App";
 import ReactDOM from "react-dom";
-import Body from "./Body";
 
-function App() {
-    return (
-        <div>
-            <Navbar />
-            <Body />
-        </div>
-    )
-}
+
 
 const app = App();
 const layout = document.querySelector('.root');

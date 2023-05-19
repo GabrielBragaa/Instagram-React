@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function User(props) {
   let [nome, setNome] = useState('Usuário');  
-  let [img, setImg] = useState('');
+  let [img, setImg] = useState(props.imagem_usuario);
   return (
         <div className="usuario">
           <img src={img} alt={props.alt_usuario} onClick={function () {
